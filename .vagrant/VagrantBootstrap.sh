@@ -5,9 +5,9 @@ add-apt-repository -y ppa:ondrej/php
 apt-get update -y
 
 apt-get install curl
-debconf-set-selections <<< 'mysql-server-5.7 mysql-server/root_password password my-vagrant-password'
-debconf-set-selections <<< 'mysql-server-5.7 mysql-server/root_password_again password my-vagrant-password'
-echo "Installing mysql-server 5.7 with my-vagrant-password as root password"
+debconf-set-selections <<< 'mysql-server-5.7 mysql-server/root_password password testpass'
+debconf-set-selections <<< 'mysql-server-5.7 mysql-server/root_password_again password testpass'
+echo "Installing mysql-server 5.7 with testpass as root password"
 apt-get -y install mysql-server-5.7
 
 apt-get install -y apache2
