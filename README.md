@@ -26,7 +26,7 @@ $ vagrant plugin install vagrant-winnfsd
 ### Installing
 Clone the project:
 ```
-$ git clone https://github.com/hung-dao/e-exam.git
+$ git clone https://github.com/longnguyendr/e-exam.git
 ```
 
 After cloning, make a secure connection to the virtual machine:
